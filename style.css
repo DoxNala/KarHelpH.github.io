@@ -124,8 +124,8 @@ h6 {
 	color: #333;
 }
 .nav-scroll .navbar-brand img {
-	-webkit-transform: scale(1.03) !important;
-	transform: scale(1.03) !important;
+	-webkit-transform: scale(0.75) !important;
+	transform: scale(0.75) !important;
 }
 .nav-scroll .navbar-toggler {
 	cursor: pointer;
