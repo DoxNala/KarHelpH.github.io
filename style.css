@@ -87,7 +87,7 @@ h6 {
 	padding: 0 15px;
 }
 .navbar-logo img {
-	width: 50px;
+	width: 100px;
 }
 .navbar-titulo {
 	display: inline-block;
@@ -106,6 +106,16 @@ h6 {
 }
 .navbar .navbar-toggler {
 	cursor: pointer;
+	height: 100%;
+	font-size: 50px;
+	margin-right: 25px;
+}
+.navbar .navbar-toggler button {
+	border: none;
+	background: transparent;
+	width: 100px;
+	/*todos los elementos internos del boton se adaptan al tamaño del boton*/
+	height: 100%;
 }
 .navbar .navbar-toggler span {
 	color: #fff;
@@ -113,6 +123,7 @@ h6 {
 .navbar-style2 .active:after, .navbar-style2 .nav-link:after {
 	display: none;
 }
+
 .nav-scroll {
 	background: #fff;
 	-webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
@@ -124,8 +135,11 @@ h6 {
 	color: #333;
 }
 .nav-scroll .navbar-brand img {
-	-webkit-transform: scale(0.75) !important;
-	transform: scale(0.75) !important;
+	-webkit-transform: scale(1) !important;
+	transform: scale(0.9) !important;
+}
+.video_youtube {
+	
 }
 .nav-scroll .navbar-toggler {
 	cursor: pointer;
@@ -575,5 +589,8 @@ h6 {
 .banner-overlay {
 	padding: 150px 0px 100px;
 	color: white;
+}
+.span {
+	font-size: 10px;
 }
 }
