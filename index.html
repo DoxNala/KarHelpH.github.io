@@ -10,7 +10,32 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+<script>
+  //obtener el tamaño actual de la pantalla
+  var ancho = screen.width;
+  var alto = screen.height;
+  //obtener el tamaño de la ventana
+  var anchoVentana = window.innerWidth;
+  var altoVentana = window.innerHeight;
+  //dentro de un bucle infinito se comprueba el tamaño de la ventana
+  //cada 100 milisegundos
+  setInterval(function(){
+    if(anchoVentana != window.innerWidth || altoVentana != window.innerHeight){
+      //si el tamaño de la ventana ha cambiado, se actualizan las variables
+      anchoVentana = window.innerWidth;
+      altoVentana = window.innerHeight;
+      //si el tamaño de la ventana es menor que 800x600
+      if(anchoVentana < 800 || altoVentana < 600){
+        //cambiar la imagen
+        document.getElementById("fotoApp").src = "images/appMovile.png";
+      }else{
+        //cambiar la imagen
+        document.getElementById("fotoApp").src = "images/appScreen.png";
+      }
+    }
+  }, 1);
 
+</script>
 <!-- Font Google -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -50,7 +75,7 @@
         <!--<iframe id="frameYoutube" src="https://www.youtube.com/embed/W18RHEV-yiU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
       </div>
       <div class="contenedor_fotoApp">
-        <img src="images/appScreen.png" alt="appScreen" class="fotoApp" style="width: 50%; height: 50%;">
+        <img src="images/appScreen.png" alt="appScreen" id="fotoApp" class="fotoApp" style="width: 50%; height: 50%;">
       </div>
   </div>
 </div>
@@ -523,6 +548,5 @@ $( ".cover-bg" ).each(function() {
 });
 
 </script>
-<script src="js.js"></script>
 </body>
 </html>
