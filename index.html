@@ -11,29 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
 <script>
-  //obtener el tamaño actual de la pantalla
-  var ancho = screen.width;
-  var alto = screen.height;
-  //obtener el tamaño de la ventana
-  var anchoVentana = window.innerWidth;
-  var altoVentana = window.innerHeight;
-  //dentro de un bucle infinito se comprueba el tamaño de la ventana
-  //cada 100 milisegundos
-  setInterval(function(){
-    if(anchoVentana != window.innerWidth || altoVentana != window.innerHeight){
-      //si el tamaño de la ventana ha cambiado, se actualizan las variables
-      anchoVentana = window.innerWidth;
-      altoVentana = window.innerHeight;
-      //si el tamaño de la ventana es menor que 800x600
-      if(anchoVentana < 800 || altoVentana < 600){
-        //cambiar la imagen
-        document.getElementById("fotoApp").src = "images/appMovile.png";
-      }else{
-        //cambiar la imagen
-        document.getElementById("fotoApp").src = "images/appScreen.png";
-      }
-    }
-  }, 1);
+
 
 </script>
 <!-- Font Google -->
@@ -74,9 +52,6 @@
       <div class="video_youtube" id="videoYoutube">
         <!--<iframe id="frameYoutube" src="https://www.youtube.com/embed/W18RHEV-yiU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
       </div>
-      <div class="contenedor_fotoApp">
-        <img src="images/appScreen.png" alt="appScreen" id="fotoApp" class="fotoApp" style="width: 50%; height: 50%;">
-      </div>
   </div>
 </div>
 
@@ -101,7 +76,7 @@
           <a href="#" class="anchor-btn">Conocer más <i class="fas fa-arrow-right pd-lt-10"></i></a> </div>
       </div>
       <div class="col-md-6 mb-50">
-        <div class="section-img"> <img src="images/logo.png" alt="" class="img-responsive"/> </div>
+        <div class="section-img" style="display: flex; justify-content: center; align-items: center;"><img src="images/appMovile.png" alt="" class="img-responsive" style="max-width: 50%;"/> </div>
       </div>
     </div>
   </div>
