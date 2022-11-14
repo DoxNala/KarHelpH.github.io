@@ -543,6 +543,24 @@ h6 {
 	text-align: center;
 	padding:7px 0px;
 }
+.container-social ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*space-between;*/	
+}
+.container-social ul li {
+	margin: 0 10px;
+}
+.container-social ul li a {
+	color: #000;
+}
+.container-social ul li a:hover {
+	color: #ab2f52;
+}
+.container-social ul li a i {
+	font-size: 50px;
+}
 @media all and (max-width:991px) {
 .navbar .navbar-collapse {
 	overflow: auto;
@@ -554,6 +572,23 @@ h6 {
 .nav-scroll .navbar-collapse {
 	background: #fff !important;
 }
+.container-social ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*space-between;*/	
+}
+.container-social ul li {
+	margin: 0 10px;
+}
+.container-social ul li a {
+	color: #000;
+}
+.container-social ul li a:hover {
+	color: #ab2f52;
+}
+.container-social ul li a i {
+	font-size: 50px;
 }
 @media all and (max-width:768px) {
 .nav-scroll .navbar-brand img, .navbar-brand img{
@@ -594,5 +629,6 @@ h6 {
 }
 .span {
 	font-size: 10px;
+}
 }
 }
